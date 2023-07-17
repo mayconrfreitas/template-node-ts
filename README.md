@@ -1,2 +1,2 @@
-# node-ts-template
-Template project for a TS application (raw)
+# ts-blockchain
+Blockchain studies based on https://www.youtube.com/watch?v=ztQEaQ06GYs&ab_channel=LucasSantos
