@@ -23,5 +23,5 @@ for (let i = 1; i <= numBlocos; i++) {
 	chain = blockchain.enviarBloco(mineInfo.blocoMinerado);
 }
 
-console.log(`--- BLOCKCHAIN ---`);
-console.log(chain);
+// console.log(`--- BLOCKCHAIN ---`);
+// console.log(chain);

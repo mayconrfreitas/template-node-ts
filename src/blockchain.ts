@@ -1,4 +1,4 @@
-import { hash, hashValidado } from "./helpers";
+import { formatThousands, hash, hashValidado } from "./helpers";
 
 export interface Bloco {
   header: {
@@ -80,7 +80,7 @@ export class Blockchain {
         const hashReduzido: string = hashBloco.slice(0, 12);
         const tempoMinerado: number = (final - inicio) / 1000;
 
-        console.log(`Bloco #${bloco.sequencia} minerado: ${hashReduzido} em ${tempoMinerado} segundos. Hash ${hashReduzido} (${nonce} tentativas)`);
+        console.log(`Bloco #${bloco.sequencia} minerado: ${hashReduzido} em ${tempoMinerado} segundos. Hash ${hashReduzido} (${formatThousands(nonce)} tentativas)`);
 
         return {
           blocoMinerado: {
